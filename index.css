@@ -1,0 +1,132 @@
+:root{
+    --background: #252525;
+    --orange: #FFA400;
+    --red: #FC2933;
+    --white: #FFFFFF;
+    --gradient: linear-gradient(98.81deg, #FFA100 -0.82%, #FB103D 101.53%);
+}
+
+@font-face {
+    font-family: "MonBold";
+    src: url("./fonts/Montserrat/static/Montserrat-Bold.ttf");
+}
+
+@font-face {
+    font-family: "MonRegular";
+    src: url("./fonts/Montserrat/static/Montserrat-Regular.ttf");
+}
+
+*{
+    font-family: "MonBold";
+    padding: 0;
+    
+}
+
+body{
+    background-color: var(--background)
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+.hero-container{
+    height: auto;
+    width: 100%;
+    flex-direction: column;                         
+    display: flex;  
+    align-items: center;     
+ }
+ 
+ .hero-img{    
+     width: 100%;
+     max-width: 400px;
+     
+ }
+
+.hero-titulo{    
+    font-size: 55px;
+    text-align: center;
+    margin: 0;
+}
+
+.hero-parrafo{
+    font-family: "MonRegular";
+    text-align: center;
+    font-size: 21px;
+}
+
+.hero-titulo2{
+    font-family: "MonBold";
+    font-size: 40px;    
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    
+}
+
+.hero-boton{
+    font-family: "MonBold";
+    font-size: 14px;
+    color: white;
+    background: var(--gradient);
+    border-radius: 15px;
+    box-shadow: 11px 28px 50px rgba(20, 78, 90, 0.2);
+    height: 50px;
+    width: 166px;
+    margin-top: 4px;
+    letter-spacing: 0.5px;
+}
+
+.pizza-img{
+    height: 100%;
+    margin: -30px 20px -30px 20px;
+}
+
+.hero-boton:hover{
+    transform:scale(1.1);
+}
+
+
+
+@media (min-width: 1024px){
+
+.hero{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.hero-container{
+    justify-content: center;
+    align-items: start;
+    width: auto;
+    margin-left:15px;
+        
+}
+
+.hero-img{    
+    max-width: 480px;
+    margin-right: 15px;
+    
+}
+
+.hero-parrafo{
+    text-align: left;
+}
+
+.hero-titulo{
+    text-align: left;
+}
+
+.hero-titulo2{
+    text-align: left;
+}
+
+}
